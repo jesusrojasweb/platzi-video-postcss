@@ -26,6 +26,7 @@ body{
 	padding: 1em 1em;
 	position: relative;
 	transition: .3s;
+	z-index: 2;
 	@media (--tablet){
 		padding: 0 1em;
 		width: 100%;
@@ -202,11 +203,12 @@ body{
 	position: fixed;
 	bottom: 0;
 	right: 0;
-	left: 22.4%;
+	left: 17%;
 	background: var(--gradiente);
 	padding: 1em 5em;
 	display: flex;
 	height: 15%;
+	z-index: 1;
 	@media(--mobile){
 		padding: 1em 2em;
 	}
