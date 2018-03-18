@@ -1,0 +1,12 @@
+:root{
+	--fucsia: #fe6196;
+	--rojo: #ff0d0f;
+	--Back: #151b31;
+	--input: #f2f2f2;
+	--caption: #bbbbbb;
+	--title: #656c72;
+	--iconos: #3f4754;
+	--texto: #5e5d62;
+	--fuente: 'Lato', sans-serif;
+	--gradiente: linear-gradient(to right, var(--rojo), var(--fucsia));
+}
