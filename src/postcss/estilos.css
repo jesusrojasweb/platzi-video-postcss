@@ -221,6 +221,7 @@ body{
 		height: auto;
 		width: 20%;
 		position: relative;
+		overflow: hidden;
 		@media(--mobile){
 			width: 90%;
 		}
