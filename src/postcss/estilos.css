@@ -10,14 +10,23 @@
 	--fuente: 'Lato', sans-serif;
 	--gradiente: linear-gradient(to right, var(--rojo), var(--fucsia));
 }
+@custom-media --mobile (max-width: 500px);
+@custom-media --tablet (max-width: 768px);
 body{
 	display: flex;
 	font-family: var(--fuente);
+	overflow-x: hidden;
+	@media (--tablet){
+		flex-direction: column;
+	}
 }
 .PlatziLista{
-	max-width: 20%;
+	width: 20%;
 	background: var(--Back);
 	padding: 1em 1em;
+	@media (--tablet){
+		width: 100%;
+	}
 	&-nombre{
 		color: white;
 		font-size: 2.5rem;
@@ -83,6 +92,9 @@ body{
 		display: flex;
 		justify-content: space-between;
 		padding: 3em 4em 1em 0;
+		@media (--tablet){
+			display: none;
+		}
 		&-form{
 			width: 40%;
 			&-grupo{
@@ -142,6 +154,9 @@ body{
 				display: grid;
 				grid-template-columns: repeat(4,1fr);
 				grid-gap: 10px;
+				@media (--tablet){
+					grid-template-columns: repeat(2,1fr);
+				}
 				&-item{
 					text-decoration: none;
 					&-img{
@@ -168,6 +183,10 @@ body{
 	padding: 1em 5em;
 	display: flex;
 	height: 15%;
+	@media (--tablet){
+		left: 0;
+		height: 10%;
+	}
 	&-video{
 		height: auto;
 		width: 20%;
