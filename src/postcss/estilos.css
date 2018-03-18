@@ -24,8 +24,16 @@ body{
 	width: 20%;
 	background: var(--Back);
 	padding: 1em 1em;
+	position: relative;
+	transition: .3s;
 	@media (--tablet){
+		padding: 0 1em;
 		width: 100%;
+		overflow: hidden;
+		height: 80px;
+	}
+	&.active{
+		height: 100%;
 	}
 	&-nombre{
 		color: white;
@@ -36,6 +44,19 @@ body{
 			-webkit-background-clip: text;
 			color: transparent;
 			font-weight: 700;
+		}
+	}
+	&-boton{
+		display: none;
+		color: white;
+		font-size: 2rem;
+		background: none;
+		border: none;
+		@media (--tablet){
+			display: block;
+			position: absolute;
+			top: 1em;
+			right: 1.5em;
 		}
 	}
 	&-lista{

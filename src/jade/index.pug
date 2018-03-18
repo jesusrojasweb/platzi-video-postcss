@@ -9,8 +9,9 @@ head
 	link(rel="stylesheet", href="css/normalize.css")
 	link(rel="stylesheet", href="css/estilos.css")
 body
-	section.PlatziLista
+	section.PlatziLista#menu
 		h1.PlatziLista-nombre!= "Platzi<span>Video</span>"
+		button.fa.fa-bars.PlatziLista-boton#boton
 		h2.PlatziLista-lista Mi Playlist
 		ol.PlatziLista-playlist
 			li.PlatziLista-playlist-item
@@ -120,3 +121,4 @@ body
 				h3.PlatziFooter-descipcion-caption Continua Viendo
 				h2.PlatziFooter-descipcion-title New Order - Bizarre Love Triangle
 
+	script(src="js/index.js")
