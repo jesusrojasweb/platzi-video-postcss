@@ -159,3 +159,46 @@ body{
 		}
 	}
 }
+.PlatziFooter{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 22.4%;
+	background: var(--gradiente);
+	padding: 1em 5em;
+	display: flex;
+	height: 15%;
+	&-video{
+		height: auto;
+		width: 20%;
+		position: relative;
+		&-img{
+			width: 100%;
+			vertical-align: top;
+		}
+		&-icono{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: color(black a(20%));
+			color: white;
+			i{
+				border: 5px solid white;
+				padding: 1em;
+				border-radius: 50%;
+			}
+		}
+	}
+	&-descipcion{
+		margin-left: 2em;
+		color: white;
+		&-caption, &-title{
+			font-weight: 400;
+		}
+	}
+}
