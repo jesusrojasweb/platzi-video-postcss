@@ -75,3 +75,87 @@ body{
 		}
 	}
 }
+.PlatziVideos{
+	width: 100%;
+	padding: 0 1em;
+	margin-bottom: 10em;
+	&-navbar{
+		display: flex;
+		justify-content: space-between;
+		padding: 3em 4em 1em 0;
+		&-form{
+			width: 40%;
+			&-grupo{
+				background: var(--input);
+				width: 85%;
+				border-radius: .25rem;
+				overflow: hidden;
+			}
+			&-input{
+				border: none;
+				background: var(--input);
+				padding: .5em 1em;
+				width: 85%;
+			}
+			i{
+				color: var(--iconos);
+				padding: .6em;
+			}
+		}
+		&-usuario{
+			display: flex;
+			text-decoration: none;
+			i{
+				align-self: center;
+				color: var(--iconos);
+				font-size: 1.5rem;
+			}
+			&-imagen{
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				overflow: hidden;
+				margin: 0 1em 0 1em;
+				&-img{
+					width: 100%;
+				}
+			}
+			&-nombre{
+				font-size: 1.2rem;
+				align-self: center;
+				color: var(--title);
+			}
+		}
+	}
+	&-categorias{
+		&-item{
+			&-caption{
+				color: var(--caption);
+				font-size: 1rem;
+				font-weight: normal;
+			}
+			&-categoria{
+				color: var(--title);
+				margin-top: 0;
+			}
+			&-videos{
+				display: grid;
+				grid-template-columns: repeat(4,1fr);
+				grid-gap: 10px;
+				&-item{
+					text-decoration: none;
+					&-img{
+						width: 100%;
+						vertical-align: top;
+						box-shadow: 5px 5px 15px 0px #d8d8d8;
+						border-radius: 2px;
+					}
+					&-nombre{
+						margin: .5em 0;
+						color: var(--texto);
+					}
+				}
+			}
+		}
+	}
+}
